@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cristiano Ronaldo - The GOAT</title>
+    <link rel="stylesheet" href="css_page1.css">
+</head>
+<body>
+
+    <h1>Cristiano Ronaldo</h1>
+
+    <div class="contenido">
+        <p>Cristiano Ronaldo dos Santos Aveiro, connu dans le monde entier sous le surnom de CR7, est l’un des plus grands footballeurs de l’histoire. Né le 5 février 1985 à Madère, au Portugal, il s’est distingué par son talent exceptionnel, sa discipline hors norme et son incroyable capacité à marquer des buts. Au cours de sa carrière, il a joué pour les plus grands clubs européens et a remporté de nombreux titres individuels et collectifs. Véritable icône du sport, CR7 incarne le travail, l’ambition et la recherche constante de l’excellence.</p>
+    </div>
+
+    <h2>Légende Vivante</h2>
+    <img src="images/cr7_local.jpg" alt="Cristiano Ronaldo" class="imagen-local">
+
+    <h2>Buts et Titres individuels dans chaque Club</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Club / Sélection</th>
+                <th>Buts / Détails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sporting CP</td>
+                <td>5 Buts</td>
+            </tr>
+            <tr>
+                <td>Manchester United</td>
+                <td>145 Buts (1 Ballon d'Or)</td>
+            </tr>
+            <tr>
+                <td>Real Madrid</td>
+                <td>451 Buts (4 Ballons d'Or)</td>
+            </tr>
+            <tr>
+                <td>Juventus</td>
+                <td>101 Buts</td>
+            </tr>
+            <tr>
+                <td>Al-Nassr</td>
+                <td>En cours... (116 Buts)</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>143 Buts (1 Euro en 2016)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Le GOAT du Football</h2>
+    <img src="https://i.pinimg.com/736x/62/2b/8e/622b8e74baf0ceb4e0320429b9fe84aa.jpg" alt="CR7" class="imagen-url">
+
+    <div class="enlaces">
+        <p>Suivez le roi sur Instagram : <a href="https://www.instagram.com/cristiano?igsh=NndyaG95ajU0Y2hi" target="_blank">Instagram Officiel</a></p>
+        
+        <hr>
+        
+        <h3>Voir l'autre légende :</h3>
+        <button onclick="window.location.href='page2.html'">Aller à la page de Lionel Messi</button>
+    </div>
+
+    <h2>Votez pour le meilleur but</h2>
+    <form onsubmit="return verifierFormulaire()">
+        <label>Quel a été le meilleur but de Cristiano Ronaldo ?</label>
+        <br>
+        <select id="but_favori">
+            <option value="juve">1) Juventus 2018</option>
+            <option value="portsmouth">2) Portsmouth 2008</option>
+            <option value="barca">3) Barcelona 2017</option>
+            <option value="spain">4) Spain 2018</option>
+            <option value="porto">5) Porto 2009</option>
+            <option value="otro">6) Autre</option>
+        </select>
+        <br><br>
+        <label>Votre nom (Obligatoire):</label>
+        <input type="text" id="nom">
+        <input type="submit" value="Envoyer le vote">
+    </form>
+    
+    <p id="message"></p>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
